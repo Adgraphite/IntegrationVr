@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-  <h1>ESSAI HTML</h1>  
-  </body>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+<a-scene>
+
+  <a-asset>
+    <img id="sol" src="sol.jpg">
+     <a-asset-item id="hypocriffe" src="hypocriffe.glb"></a-asset-item>
+
+    </a-asset>
+
+    <a-box position="0 0.12047 -0.01933" rotation="-90 0 0" src="#sol" material="" geometry="primitive: plane" scale="5 5 5">
+     </a-box>
+     <a-entity
+       gltf-model="#hypocriffe"  scale="10 10 10" position="0 0 0">
+       </a-entity>
+    </a-scene>
+
+</body>
+
+
+
+
+
 </html>
